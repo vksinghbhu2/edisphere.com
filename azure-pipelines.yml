@@ -1,0 +1,36 @@
+pool:
+  name: Azure Pipelines
+  vmImage: 'ubuntu-latest'
+trigger:
+  branches:
+    include:
+    - master
+  paths:
+    exclude:
+    - README.md
+
+steps:
+- task: UseRubyVersion@0
+  inputs:
+    versionSpec: '3.x'
+
+- script: |
+    gem install jekyll bundler
+    bundle install --retry=3 --jobs=4
+  displayName: 'bundle install'
+
+- script: |
+    bundle install
+    bundle exec jekyll build
+  displayName: 'jekyll'
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    SourceFolder: '_site'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: site

@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.breadcrumb-item a {color: unset; text-decoration: unset;}
+.dark-font .breadcrumb-item + .breadcrumb-item::before {
+    color: #000; }
+    .dark-font .breadcrumb-item.active {
+    color: #455a64; }
+
+.cyan.lighten-4 {
+    background-color: #b2ebf2 !important;
+}
+ol.breadcrumb {padding-left: 45px;}
+
+@media (max-width: 768px) {  
+    ol.breadcrumb {  padding-left: 5%; display: inline-flex; text-align-last: center;}
+}

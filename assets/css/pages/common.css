@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*==Start of edi-sap-integration==*/
+.leftRightArrow {font-size: 20px;} 
+.leftRightArrow::after {content: '\2194';} 
+.section-sap-intergation {font-size: 16px} 
+.ul-lists-indent, .ol-lists-indent {margin-left: 5%;}
+.ul-lists-indent li, .ol-lists-indent li, .inner-bullet-lists-a li {margin-top: 5px; /*text-align: justify;*/}
+.inner-bullet-lists-a {margin-left: 7%;}
+.sap-integration-header a {text-decoration: unset;}
+.section-sap-intergation *, a#edisphere-sap-integration:hover {color: rgb(75, 65, 65) !important; font-family: 'Roboto', Helvetica, sans-serif;}
+h2.sap-integration-subheader { font-weight: 400; font-style: italic; font-size: 24px;}
+.section-sap-intergation h3 { font-weight: 500;}
+.pdf-next-pre-btns {display: block; height: 60px;} 
+/*- Article -*/
+.edi-article { display: grid; grid-template-columns: 16.6667% auto 16.6667%;}
+article.edi-article * {grid-column: 2 / 3;}
+
+@media (max-width: 768px) {
+    .edi-article { display:grid; grid-template-columns: 5% auto 5%; }  
+    article.edi-article * {grid-column: 2 / 3;}
+}
+@media (min-width: 1000px) {.pdf-next-pre-btns {padding-left: 16.6667%; padding-right: 16.6667%;}}
+@media (max-width: 1000px) {.pdf-next-pre-btns {padding-left: 40px;}}
+/*--End of edi-sap-integration--*/
+
+a[href$=".pdf"]::before {
+    background: url("../../images/download-as-pdf.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 32px; height: 32px;
+
+    content: "";
+    position: absolute;
+    margin: -8px 0 0 -52px;
+}
+.sap-wp-test[href$=".pdf"]::before {
+ background: none;
+}
+.pdf-remove[href$=".pdf"]::before { 
+background: none;
+
+}
+.pagination-btn {
+    display: inline-flexbox;
+
+}
+.pagination-btn a:first-child {
+    margin-right: 5px;
+}
+
+label.required:after { content:" *"; color: red;}
+.edi-response {
+    color: #24292E;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%; height: auto;
+    float: left; margin-bottom: 18px;
+    display: none;
+}
+
+.edi-response.edi-response-show { display: block; }
+.edi-response.edi-response-success { color: #2ecc71 }
+.edi-response.edi-response-error { color: #c0392b }
+
+@media only screen and (max-width: 520px) {
+
+    a.download-as-pdf {
+    text-align: center;
+    width: 100%; float: left;
+    margin-top: 30px;
+    }
+
+    .m_left_margin {
+        margin-left: 2%;
+    }
+    a.download-as-pdf::before { transform: scale(0.8); margin-left: -38px; }
+
+}
+

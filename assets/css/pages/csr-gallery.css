@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.edi-csr-gallery a.gallery-item {
+    background: #F5F5F5;
+    overflow: hidden;
+    padding: 0;
+    border: 5px solid #FFFFFF;
+    transition: opacity 0.075s ease;
+    border-radius: 8px;
+}
+
+.edi-csr-gallery a.gallery-item:hover { opacity: 0.8; }
+.edi-csr-gallery a.gallery-item img { width: 100%; float: left; }

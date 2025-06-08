@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.edi-content .edi-content-inner { padding: 40px 30px; }
+
+.edi-content .edi-content-inner .edi-content-title {
+    color:  rgb(75, 65, 65);
+    font-size: 28px;
+    font-weight: bold;
+    width: 100%; display: block;
+    margin-bottom: 40px;
+    float: left;
+}
+
+.edi-content .edi-content-inner .edi-content-subtitle {
+    color: #3498DB;
+    font-size: 18px;
+    margin: 30px 0 20px;
+    width: 100%;
+    float: left;
+}
+
+.edi-content .edi-content-inner .edi-content-paragraph {
+    color: #454545;
+    font-size: 18px;
+    line-height: 1.65em;
+    /*text-align:justify;*/
+    padding-bottom: 20px;
+}
+
+.edi-content .edi-content-inner .edi-content-paragraph:last-child { padding-bottom: 80px; }
+.edi-content .edi-content-inner .edi-content-paragraph a { color: #24292E; text-decoration: none; }
+.edi-content .edi-content-inner .edi-content-paragraph a { color: #24292E; text-decoration: none; }
+.edi-content .edi-content-inner .edi-content-image { width: 100%; height: auto; transform: scale(0.8); position: relative; }
+
+.edi-content .edi-content-inner .edi-content-paragraph img {
+    width: 100%; height: auto;
+    float: none; margin: auto;
+}
+
+.edi-content .edi-content-inner .edi-content-paragraph .image img { width: 100%; height: auto; }
+
+.space-top { margin-top: 40px; }
+.space-left { margin-left: 40px; }
+.space-right { margin-right: 40px; }
+.space-bottom { margin-bottom: 40px; }
+
+/*==Start - Edisphere - data integration suit executive overview==*/
+.data-integration-suit-pagelinks-anchors{color: rgba(35, 148, 185, 0.829) !important;} 
+.data-integration-suit-pagelinks-anchors::before{background: none !important;} 

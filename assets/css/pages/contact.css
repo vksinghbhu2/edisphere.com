@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+.edi-contact .edi-contact-inner { padding: 40px 30px; }
+
+.sp-top { margin-top: 15px !important; }
+.sp-bottom { margin-bottom: 15px !important; }
+.sp-left { margin-left: 15px !important; }
+.sp-right { margin-right: 15px !important; }
+
+.padding-top { padding-top: 15px !important; }
+.padding-bottom { padding-bottom: 15px !important; }
+.padding-left { padding-left: 15px !important; }
+.padding-right { padding-right: 15px !important; }
+
+.edi-contact .edi-contact-inner .ci-block .general-info b {
+    color: #24292E;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.edi-contact .edi-contact-inner .ci-block .general-info p {
+    color: #24292E;
+    font-size: 16px;
+    line-height: 1.65em;
+}
+
+.edi-contact .edi-contact-inner .ci-block .ci-form h3 { color: #207FC0 }
+.edi-contact .edi-contact-inner .ci-block .ci-map {
+    background: #DEDEDE;
+    height: 440px;
+    border: 0;
+}
+
+.res-input {
+    width: 600px;
+}
+
+@media only screen and (max-width: 768px) {
+    .res-input {
+      width: 100%;
+    }
+}
+

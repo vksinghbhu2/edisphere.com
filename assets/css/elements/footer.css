@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+.edi-footer {
+    background: transparent;
+    width: 100%; height: auto;
+}
+
+.edi-footer .edi-footer-inner,
+.edi-footer .edi-footer-copyright {
+    background: #252B35;
+    padding: 80px 30px;
+}
+
+.edi-footer .edi-footer-inner .inner-container .container-block { padding: 20px 20px; }
+.edi-footer .edi-footer-inner .inner-container .container-block h1 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.edi-footer .edi-footer-inner .inner-container .container-block menu { width: 100%; height: auto; }
+.edi-footer .edi-footer-inner .inner-container .container-block menu li { margin: 5px 0; color: #DEDEDE; list-style-type: circle; }
+.edi-footer .edi-footer-inner .inner-container .container-block menu li.no-bullet { margin: 5px 0; color: #DEDEDE; list-style-type: none; }
+.edi-footer .edi-footer-inner .inner-container .container-block menu li:first-child { margin-top: 0; }
+.edi-footer .edi-footer-inner .inner-container .container-block menu li:last-child { margin-bottom: 0; }
+.edi-footer .edi-footer-inner .inner-container .container-block menu li a {
+    color: #FFFFFF;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1.65em;
+    opacity: 0.75;
+}
+
+.edi-footer .edi-footer-inner .inner-container .container-block menu li a:hover { color: #FFFFFF; text-decoration: underline; }
+
+/*****
+    COPYRIGHT
+*****/
+
+.edi-footer .edi-footer-copyright {
+    background: #1E232B;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 30px;
+}
+
+.edi-footer .edi-footer-copyright menu {
+    width: 100%; height: auto;
+    float: left; margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.edi-footer .edi-footer-copyright menu li { display: inline-block; margin: 0 8px; }
+.edi-footer .edi-footer-copyright menu li:first-child { margin-left: 0; }
+.edi-footer .edi-footer-copyright menu li:last-child { margin-right: 0; }
+.edi-footer .edi-footer-copyright menu li a {
+    color: #FFFFFF;
+    font-size: 15px;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.edi-footer .edi-footer-copyright menu li a:hover { opacity: 1; text-decoration: underline; }
+.edi-footer .edi-footer-copyright p {
+    color: #95a5a6;
+    font-size: 14px;
+    width: 100%; height: auto;
+    float: left; margin: auto;
+    text-align: center;
+}
